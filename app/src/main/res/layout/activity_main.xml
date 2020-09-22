@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!--Pododemos utilizar mais de um layout em um mesmo layou, assim podemos agrupar
+    itens de diferentes maneiras e criar diferentes tipos de organização das telas
+    Aqui estamos usando um layout linear vertical com alguns horizontais para agrupar itens em uma
+    mesma linha
+
+    Temos erros de código que não deixarão o APP funcionar como o esperado
+         ou que não é a melhor maneira de ser feita-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+    <!--Aqui é um exemplo de um layout inserido em outro. Temos que tomar cuidado com
+    a largura e altura dos layouts internos, pois senão eles podem ocupar a tela e
+    então somente um será exibido-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnNovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/novo_produto"/>
+
+        <Button
+            android:id="@+id/btnAtualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/atualizar_produto" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCriarEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/preencher_email"
+        android:onClick="onClickCadastrarEmail" />
+
+
+</LinearLayout>
