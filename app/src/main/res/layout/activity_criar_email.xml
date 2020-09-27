@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:text="@string/hint_quantidade" />
+            android:hint="@string/hint_quantidade" />
 
     </LinearLayout>
 
@@ -58,5 +58,7 @@
         android:id="@+id/btnEnviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enviar" />
+        android:text="Enviar"
+        android:onClick="onClickEnviar"
+    />
 </LinearLayout>

@@ -24,12 +24,13 @@
             android:id="@+id/txtIdProdutoNovo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nome_produto" />
+            android:text="ID Produto" />
 
         <EditText
             android:id="@+id/edtIdProdutoNovo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="ID Produto" />
 
     </LinearLayout>
@@ -43,7 +44,7 @@
             android:id="@+id/txtProdutoNovo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nome_produto" />
+            android:text="Produto Novo" />
 
         <EditText
             android:id="@+id/edtProdutoNovo"
@@ -69,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:text="@string/hint_quantidade" />
+            android:hint="Digite a quantidade" />
 
     </LinearLayout>
 
@@ -77,6 +78,7 @@
         android:id="@+id/btnSalvarNovo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Salvar" />
+        android:text="Salvar"
+    />
 
 </LinearLayout>

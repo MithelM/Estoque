@@ -8,7 +8,7 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <!--Pododemos utilizar mais de um layout em um mesmo layou, assim podemos agrupar
+    <!--Pododemos utilizar mais de um layout em um mesmo layout, assim podemos agrupar
     itens de diferentes maneiras e criar diferentes tipos de organização das telas
     Aqui estamos usando um layout linear vertical com alguns horizontais para agrupar itens em uma
     mesma linha
@@ -38,13 +38,17 @@
             android:id="@+id/btnNovo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/novo_produto"/>
+            android:text="@string/novo_produto"
+            android:onClick="onClickNovo"
+        />
 
         <Button
-            android:id="@+id/btnAtualizar"
+            android:id="@+id/btnExibir"
+            android:text="Exibir Produtos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/atualizar_produto" />
+            android:onClick="onClickExibir"
+        />
 
     </LinearLayout>
 
