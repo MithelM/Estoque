@@ -42,9 +42,10 @@ public class ExibirPodutoActivity extends AppCompatActivity {
         */
 
         final ProdutoController produtoController = new ProdutoController(SQLite.getInstance(ExibirPodutoActivity.this));
-        produtoList = produtoController.getListaProdutoController();
 
         this.lvProduto = (ListView) findViewById(R.id.msgRecebida);
+
+        this.produtoList = produtoController.getListaProdutoController();
 
         this.adaptersListaProdutos = new AdaptersListaProdutos(this, produtoList);
 
@@ -69,7 +70,7 @@ public class ExibirPodutoActivity extends AppCompatActivity {
                     }
                 });
 
-                janelaEscolha.setNegativeButton("Delete", new DialogInterface.OnClickListener() {
+                        janelaEscolha.setNegativeButton("Delete", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int id) {
                         dialogInterface.cancel();
@@ -89,7 +90,7 @@ public class ExibirPodutoActivity extends AppCompatActivity {
                     }
                 });
 
-                janelaEscolha.setPositiveButton("Edit", new DialogInterface.OnClickListener() {
+                         janelaEscolha.setPositiveButton("Edit", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int id) {
 

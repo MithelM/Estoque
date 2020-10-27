@@ -14,8 +14,8 @@ public class ProdutoController {
         produtoDAO = new ProdutoDAO(sqLite);
     }
 
-    public long salvarProduto(Produto produto){
-        return this.produtoDAO.salvarProduto(produto);
+    public long salvarProdutoController(Produto produto){
+        return this.produtoDAO.salvarProdutoDAO(produto);
     }
 
     public List<Produto> getListaProdutoController(){

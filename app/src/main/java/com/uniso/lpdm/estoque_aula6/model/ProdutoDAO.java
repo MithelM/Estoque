@@ -17,7 +17,8 @@ public class ProdutoDAO {
 
         this.sqLite = sqLite;
     }
-    public long salvarProduto(Produto produto){
+
+    public long salvarProdutoDAO(Produto produto){
         SQLiteDatabase db = sqLite.getWritableDatabase();
 
         try{

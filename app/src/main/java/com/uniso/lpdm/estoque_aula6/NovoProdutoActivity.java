@@ -102,7 +102,7 @@ public class NovoProdutoActivity extends AppCompatActivity {
 
                 if (cadastro != null){
                     ProdutoController produtoController = new ProdutoController(SQLite.getInstance(NovoProdutoActivity.this));
-                    long idProd = produtoController.salvarProduto(cadastro);
+                    long idProd = produtoController.salvarProdutoController(cadastro);
 
                     if (idProd > 0){
                         Toast.makeText(NovoProdutoActivity.this, "Produto Salvo com Sucesso!! :)", Toast.LENGTH_LONG).show();

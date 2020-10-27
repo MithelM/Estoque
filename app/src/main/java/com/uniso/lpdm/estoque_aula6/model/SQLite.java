@@ -32,6 +32,7 @@ public class SQLite extends SQLiteOpenHelper {
                 "quantidade INTEGER "+
                 ")";
 
+
         sqLiteDatabase.execSQL(sqlTableProduto);
     }
 
